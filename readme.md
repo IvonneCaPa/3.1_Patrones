@@ -1,4 +1,4 @@
-# 2.3 Patrones de Diseño
+# 3.2 Design Patterns
 ## Description:
 Learn to use design pattern implementations.
 
