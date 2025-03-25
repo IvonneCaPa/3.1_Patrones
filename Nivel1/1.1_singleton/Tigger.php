@@ -35,9 +35,11 @@
         }   
 
         // método rugir y contador
-        public function roar() {
-            ++$this->count;
-            echo "Grrr!" . PHP_EOL;
+        public function roar(int $roars) {
+            for($i=1; $i<=$roars; $i++){
+                echo "Grrr!" . PHP_EOL;
+                ++$this->count;
+            }       
         }
 
         // devuelve cantidad de rugidos
@@ -48,11 +50,7 @@
     }
 
     $instance = Tigger::getInstance();
-    $instance->roar();
-    $instance->roar();
-    $instance->roar();
-    $instance->roar();
-    $instance->roar();
+    $instance->roar(12);
     echo "Tigger ha rugido " . $instance->getCounter() . PHP_EOL;
 
   
